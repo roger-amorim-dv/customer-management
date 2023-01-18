@@ -78,6 +78,6 @@ public class CustomerService {
     }
 
     private boolean isAnotherTypeOfDocument(final String identifierType, final String identifier) {
-        return !isCnpj(identifierType, identifier) && !isCnpj(identifierType, identifier);
+        return !isCnpj(identifierType, identifier) && !isCpf(identifierType, identifier);
     }
 }
